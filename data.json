@@ -1,0 +1,282 @@
+[
+    {
+        "name": "Białowodzka Góra",
+        "range": "Beskid Wyspowy",
+        "height": 616,
+        "lat": 49.68343,
+        "lon": 20.619965
+    },
+    {
+        "name": "Chełm n. Kłodnem",
+        "range": "Beskid Wyspowy",
+        "height": 789,
+        "lat": 49.703584,
+        "lon": 20.5778
+    },
+    {
+        "name": "Cichoń",
+        "range": "Beskid Wyspowy",
+        "height": 926,
+        "lat": 49.642745,
+        "lon": 20.374559
+    },
+    {
+        "name": "Ciecień",
+        "range": "Beskid Wyspowy",
+        "height": 830,
+        "lat": 49.773248,
+        "lon": 20.141901
+    },
+    {
+        "name": "Czarny Dział",
+        "range": "Beskid Wyspowy",
+        "height": 673,
+        "lat": 49.68572,
+        "lon": 20.132929
+    },
+    {
+        "name": "Ćwilin",
+        "range": "Beskid Wyspowy",
+        "height": 1072,
+        "lat": 49.688754,
+        "lon": 20.191428
+    },
+    {
+        "name": "Grodzisko",
+        "range": "Beskid Wyspowy",
+        "height": 618,
+        "lat": 49.816435,
+        "lon": 20.145922
+    },
+    {
+        "name": "Jasień",
+        "range": "Beskid Wyspowy",
+        "height": 1063,
+        "lat": 49.630333,
+        "lon": 20.224339
+    },
+    {
+        "name": "Jaworz",
+        "range": "Beskid Wyspowy",
+        "height": 918,
+        "lat": 49.720751,
+        "lon": 20.520937
+    },
+    {
+        "name": "Kamionna",
+        "range": "Beskid Wyspowy",
+        "height": 801,
+        "lat": 49.778578,
+        "lon": 20.396236
+    },
+    {
+        "name": "Kostrza",
+        "range": "Beskid Wyspowy",
+        "height": 720,
+        "lat": 49.770601,
+        "lon": 20.299387
+    },
+    {
+        "name": "Korab",
+        "range": "Beskid Wyspowy",
+        "height": 727,
+        "lat": 49.739708,
+        "lon": 20.476542
+    },
+    {
+        "name": "Krzystonów",
+        "range": "Beskid Wyspowy",
+        "height": 1020,
+        "lat": 49.640247,
+        "lon": 20.241065
+    },
+    {
+        "name": "Księża Góra",
+        "range": "Beskid Wyspowy",
+        "height": 643,
+        "lat": 49.787859,
+        "lon": 20.145879
+    },
+    {
+        "name": "Kuklacz",
+        "range": "Beskid Wyspowy",
+        "height": 701,
+        "lat": 49.660808,
+        "lon": 20.440664
+    },
+    {
+        "name": "Kutrzyca",
+        "range": "Beskid Wyspowy",
+        "height": 1053,
+        "lat": 49.633215,
+        "lon": 20.226796
+    },
+    {
+        "name": "Lubogoszcz",
+        "range": "Beskid Wyspowy",
+        "height": 967,
+        "lat": 49.712604,
+        "lon": 20.09894
+    },
+    {
+        "name": "Luboń Wielki",
+        "range": "Beskid Wyspowy",
+        "height": 1023,
+        "lat": 49.653523,
+        "lon": 19.991915
+    },
+    {
+        "name": "Łopień",
+        "range": "Beskid Wyspowy",
+        "height": 960,
+        "lat": 49.692585,
+        "lon": 20.265173
+    },
+    {
+        "name": "Łopusze Wschodnie",
+        "range": "Beskid Wyspowy",
+        "height": 601,
+        "lat": 49.800519,
+        "lon": 20.468752
+    },
+    {
+        "name": "Łyżka",
+        "range": "Beskid Wyspowy",
+        "height": 802,
+        "lat": 49.642715,
+        "lon": 20.462181
+    },
+    {
+        "name": "Mogielica",
+        "range": "Beskid Wyspowy",
+        "height": 1170,
+        "lat": 49.655318,
+        "lon": 20.276674
+    },
+    {
+        "name": "Modyń",
+        "range": "Beskid Wyspowy",
+        "height": 1029,
+        "lat": 49.621231,
+        "lon": 20.376061
+    },
+    {
+        "name": "Miejska Góra",
+        "range": "Beskid Wyspowy",
+        "height": 716,
+        "lat": 49.718948,
+        "lon": 20.44067
+    },
+    {
+        "name": "Ostra k. Cichonia",
+        "range": "Beskid Wyspowy",
+        "height": 925,
+        "lat": 49.643276,
+        "lon": 20.392588
+    },
+    {
+        "name": "Ostra k. Ogorzałej",
+        "range": "Beskid Wyspowy",
+        "height": 790,
+        "lat": 49.662975,
+        "lon": 20.153496
+    },
+    {
+        "name": "Ogorzała",
+        "range": "Beskid Wyspowy",
+        "height": 805,
+        "lat": 49.666197,
+        "lon": 20.144055
+    },
+    {
+        "name": "Sałasz",
+        "range": "Beskid Wyspowy",
+        "height": 905,
+        "lat": 49.722274,
+        "lon": 20.487732
+    },
+    {
+        "name": "Szkiełek",
+        "range": "Beskid Wyspowy",
+        "height": 749,
+        "lat": 49.608332,
+        "lon": 20.470319
+    },
+    {
+        "name": "Szczebel",
+        "range": "Beskid Wyspowy",
+        "height": 976,
+        "lat": 49.688481,
+        "lon": 20.010451
+    },
+    {
+        "name": "Śnieżnica",
+        "range": "Beskid Wyspowy",
+        "height": 1007,
+        "lat": 49.716017,
+        "lon": 20.178199
+    },
+    {
+        "name": "Urbania Góra",
+        "range": "Beskid Wyspowy",
+        "height": 673,
+        "lat": 49.722343,
+        "lon": 19.888301
+    },
+    {
+        "name": "Worecznik",
+        "range": "Beskid Wyspowy",
+        "height": 560,
+        "lat": 49.746918,
+        "lon": 20.196862
+    },
+    {
+        "name": "Wsołowa",
+        "range": "Beskid Wyspowy",
+        "height": 624,
+        "lat": 49.6721,
+        "lon": 20.10438
+    },
+    {
+        "name": "Zębalowa",
+        "range": "Beskid Wyspowy",
+        "height": 858,
+        "lat": 49.709523,
+        "lon": 19.908267
+    },
+    {
+        "name": "Zęzów",
+        "range": "Beskid Wyspowy",
+        "height": 695,
+        "lat": 49.746613,
+        "lon": 20.319557
+    },
+    {
+        "name": "Adamczykowa",
+        "range": "Gorce",
+        "height": 612,
+        "lat": 49.649459,
+        "lon": 20.060606
+    },
+    {
+        "name": "Potaczkowa",
+        "range": "Gorce",
+        "height": 745,
+        "lat": 49.626356,
+        "lon": 20.061271
+    },
+    {
+        "name": "Lubomir",
+        "range": "Beskid Makowski",
+        "height": 902,
+        "lat": 49.76688,
+        "lon": 20.059748
+    },
+    {
+        "name": "Patryja",
+        "range": "Beskid Makowski",
+        "height": 763,
+        "lat": 49.754155,
+        "lon": 20.044384
+    }
+]
