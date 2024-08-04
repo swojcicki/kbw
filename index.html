@@ -43,9 +43,10 @@
     const map = L.map('map').setView([49.7, 20.2], 11);
 
     // Dodanie warstwy mapy OSM
-    //        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    L.tileLayer('https://tile.mapa-turystyczna.pl/map/{z}/{x}/{y}.v4808.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors | &copy; <a href="https://mapa-turystyczna.pl/informacje-licencyjne">Mapa Turystyczna</a>'
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+//    L.tileLayer('https://tile.mapa-turystyczna.pl/map/{z}/{x}/{y}.v4808.png', {
+//        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors | &copy; <a href="https://mapa-turystyczna.pl/informacje-licencyjne">Mapa Turystyczna</a>'
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
 
     // Przechowywanie markerów i tooltipów
