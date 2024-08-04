@@ -34,7 +34,8 @@
 <body>
 <div id="controls">
     <input type="checkbox" id="toggle-tooltips"/> Pokaż etykiety<br/>
-    <input type="checkbox" id="toggle-trails" /> Pokaż szlaki
+    <input type="checkbox" id="toggle-trails" /> Pokaż szlaki<br/>
+    <input type="checkbox" id="show-position" /> Pokaż lokalizację
 </div>
 
 <div id="map"></div>
@@ -99,8 +100,35 @@
         }
     }
 
+    // Funkcja do ustawiania markera na aktualnej pozycji użytkownika
+    function onLocationFound(e) {
+        var radius = e.accuracy / 2;
+
+        // Dodajemy marker na aktualną pozycję użytkownika
+        L.marker(e.latlng, {icon: L.icon({
+                iconUrl: 'https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon.png',
+                iconSize: [25, 41],
+                iconAnchor: [12, 41],
+                popupAnchor: [1, -34],
+                shadowSize: [41, 41]
+            })}).addTo(map)
+            .bindPopup("Jesteś w promieniu " + radius + " metrów od tego punktu").openPopup();
+
+        // Dodajemy okrąg pokazujący dokładność geolokalizacji
+        L.circle(e.latlng, radius).addTo(map);
+    }
+
+    function onLocationError(e) {
+        // alert(e.message);
+    }
+
+    // Używamy funkcji geolokalizacji Leaflet
+    map.on('locationfound', onLocationFound);
+    map.on('locationerror', onLocationError);
+
     document.getElementById('toggle-tooltips').checked = false;
     document.getElementById('toggle-trails').checked = false;
+    document.getElementById('show-position').checked = false;
 
     // Obsługa zdarzenia zmiany stanu checkboxa
     document.getElementById('toggle-tooltips').addEventListener('change', function () {
@@ -108,6 +136,10 @@
     });
     document.getElementById('toggle-trails').addEventListener('change', function() {
         toggleTrails(this.checked);
+    });
+    document.getElementById('show-position').addEventListener('change', function() {
+        // Wywołujemy funkcję geolokalizacji
+        map.locate({setView: true});
     });
 </script>
 </body>
