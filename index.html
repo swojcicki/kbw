@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
 <head>
     <title>KBW - Korona Beskidu Wyspowego - Mapa</title>
     <meta charset="utf-8"/>
@@ -33,7 +33,8 @@
 </head>
 <body>
 <div id="controls">
-    <input type="checkbox" id="toggle-tooltips"/> Pokaż etykiety
+    <input type="checkbox" id="toggle-tooltips"/> Pokaż etykiety<br/>
+    <input type="checkbox" id="toggle-trails" /> Pokaż szlaki
 </div>
 
 <div id="map"></div>
@@ -45,12 +46,12 @@
 
     // Dodanie warstwy mapy OSM
           L.tileLayer('https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png', {
-    //        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    // L.tileLayer('https://tile.mapa-turystyczna.pl/map/{z}/{x}/{y}.v4808.png', { // it's illegal :D
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors</a>'
+    // L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    // L.tileLayer('https://tile.mapa-turystyczna.pl/map/{z}/{x}/{y}.v4808.png', { // it's illegal in public :D
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors</a>, &copy; <a href="https://hiking.waymarkedtrails.org">Waymarked Trails</a>'
     }).addTo(map);
-    L.tileLayer('https://tile.waymarkedtrails.org/hiking/{z}/{x}/{y}.png', {
-    }).addTo(map);
+    // Warstwa szlaków Waymarked Trails Hiking
+    const hikingLayer = L.tileLayer('https://tile.waymarkedtrails.org/hiking/{z}/{x}/{y}.png', {});
 
     // Przechowywanie markerów i tooltipów
     const tooltips = [];
@@ -89,11 +90,24 @@
         }
     }
 
+    // Funkcja do przełączania warstwy szlaków
+    function toggleTrails(show) {
+        if (show) {
+            map.addLayer(hikingLayer);
+        } else {
+            map.removeLayer(hikingLayer);
+        }
+    }
+
     document.getElementById('toggle-tooltips').checked = false;
+    document.getElementById('toggle-trails').checked = false;
 
     // Obsługa zdarzenia zmiany stanu checkboxa
     document.getElementById('toggle-tooltips').addEventListener('change', function () {
         toggleTooltips(this.checked);
+    });
+    document.getElementById('toggle-trails').addEventListener('change', function() {
+        toggleTrails(this.checked);
     });
 </script>
 </body>
