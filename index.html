@@ -4,6 +4,7 @@
     <title>KBW - Korona Beskidu Wyspowego - Mapa</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="fav.ico">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,11 +44,12 @@
     const map = L.map('map').setView([49.7, 20.2], 11);
 
     // Dodanie warstwy mapy OSM
-      L.tileLayer('https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png', {
-//    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-//    L.tileLayer('https://tile.mapa-turystyczna.pl/map/{z}/{x}/{y}.v4808.png', {
-//        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors | &copy; <a href="https://mapa-turystyczna.pl/informacje-licencyjne">Mapa Turystyczna</a>'
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          L.tileLayer('https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png', {
+    //        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    // L.tileLayer('https://tile.mapa-turystyczna.pl/map/{z}/{x}/{y}.v4808.png', { // it's illegal :D
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors</a>'
+    }).addTo(map);
+    L.tileLayer('https://tile.waymarkedtrails.org/hiking/{z}/{x}/{y}.png', {
     }).addTo(map);
 
     // Przechowywanie markerów i tooltipów
